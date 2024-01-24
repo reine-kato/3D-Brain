@@ -1,0 +1,59 @@
+/* adjusting screen size for device */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+#container {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+/* canvas */
+#container3D canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* text */
+header {
+  text-align: left;
+  color: #000000;
+  position: absolute;
+  z-index: 1;
+  top: 2vh;
+  left: 3vw;
+}
+header h1 {
+  font-family: 'Rubik', Times;
+  font-size: 5em;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#toggleSeeInsideButton {
+  position: absolute;
+    top: 130px;
+    left: 30px;
+    margin: 0;
+    z-index: 2;
+    border: 0;
+    font-family: "Montserrat";
+    font-size: 1em;
+    width: 20vw;
+    height: 5vh;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
